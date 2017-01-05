@@ -10,6 +10,9 @@ header {
   color: white;
   font-size: 0.5em;
 }
+.affix img {
+  display: none;
+}
 .intro-text {
   margin-left: 17%;
 }
@@ -172,7 +175,7 @@ fieldset[disabled] .btn-xl.active {
   background-color: white;
 }
 .navbar-custom {
-  background-color: #222222;
+  background-color: transparent;
   border-color: transparent;
 }
 .navbar-custom .navbar-brand {
@@ -189,11 +192,9 @@ fieldset[disabled] .btn-xl.active {
   border-color: rgba(255, 255, 255, 0.02);
 }
 .navbar-custom .navbar-toggle {
-  background-color: #fed136;
-  border-color: #fed136;
+  color: white;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
-  color: white;
   font-size: 12px;
 }
 .navbar-custom .navbar-toggle:hover,
