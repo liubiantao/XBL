@@ -31,6 +31,9 @@ header {
   letter-spacing: 0.91px;
   text-align: left;
 }
+#intro {
+  background-image: radial-gradient(29% 62%, #189dd3 30%, #53a0fe 86%);
+}
 body {
   overflow-x: hidden;
   font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
