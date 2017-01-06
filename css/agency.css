@@ -4,6 +4,7 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 header {
+  background-image: url('../img/header-bg.png');
   padding-bottom: 123px;
 }
 .navbar-brand img {
@@ -29,7 +30,7 @@ header {
   z-index: 1;
 }
 #services .container {
-  padding: 50px;
+  padding: 100px 50px 50px;
 }
 .intro-text {
   margin-left: 17%;
@@ -74,6 +75,83 @@ header {
   width: 80%;
   margin: 60px auto;
 }
+#about {
+  background-image: url('../img/about.png');
+  padding-bottom: 10px;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  color: white;
+  font-family: PingFangSC-Light;
+}
+#about .introText {
+  font-family: PingFangSC-Thin;
+  font-size: 1.3em;
+  color: #ffffff;
+  letter-spacing: 1.35px;
+  line-height: 30px;
+  text-align: justify;
+  width: 80%;
+  margin: 0 auto;
+}
+#about .ul {
+  width: 86%;
+}
+#about .flex {
+  display: flex;
+  width: 100%;
+}
+#about button {
+  border: 1px solid #979797;
+  border-radius: 100px;
+  width: 341px;
+  height: 75px;
+  background: transparent;
+  margin: 50px auto;
+}
+#contact {
+  text-align: center;
+}
+#contact .i {
+  width: 30px;
+  height: 30px;
+  margin: 4px 10px 6px 0;
+}
+#contact .col-md-6 {
+  margin: 50px 0;
+}
+#contact .text-left {
+  margin: auto;
+  width: 300px;
+}
+#contact .text-left p {
+  font-family: PingFangSC-Ultralight;
+  font-size: 2em;
+  color: #000000;
+  letter-spacing: 1.3px;
+  text-align: left;
+  line-height: 1.4;
+}
+#contact .text-left p b {
+  font-family: PingFangSC-Semibold;
+  font-size: 2em;
+  color: #000000;
+  letter-spacing: 2.72px;
+  text-align: left;
+}
+#contact .text-left a {
+  display: block;
+  font-family: PingFangSC-Ultralight;
+  font-size: 1.5em;
+  color: #000000;
+  letter-spacing: 1.3px;
+  text-align: left;
+  line-height: 1.4;
+}
 body {
   overflow-x: hidden;
   font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -92,19 +170,19 @@ p.large {
   font-size: 16px;
 }
 a,
-a:hover,
-a:focus,
+a.active,
 a:active,
-a.active {
+a:focus,
+a:hover {
   outline: none;
 }
 a {
   color: #fed136;
 }
-a:hover,
-a:focus,
+a.active,
 a:active,
-a.active {
+a:focus,
+a:hover {
   color: #fec503;
 }
 h1,
@@ -225,10 +303,10 @@ fieldset[disabled] .btn-xl.active {
   color: #fed136;
   font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
 }
-.navbar-custom .navbar-brand:hover,
-.navbar-custom .navbar-brand:focus,
+.navbar-custom .navbar-brand.active,
 .navbar-custom .navbar-brand:active,
-.navbar-custom .navbar-brand.active {
+.navbar-custom .navbar-brand:focus,
+.navbar-custom .navbar-brand:hover {
   color: #fec503;
 }
 .navbar-custom .navbar-collapse {
@@ -240,8 +318,8 @@ fieldset[disabled] .btn-xl.active {
   text-transform: uppercase;
   font-size: 12px;
 }
-.navbar-custom .navbar-toggle:hover,
-.navbar-custom .navbar-toggle:focus {
+.navbar-custom .navbar-toggle:focus,
+.navbar-custom .navbar-toggle:hover {
   background-color: #fed136;
 }
 .navbar-custom .nav li a {
@@ -251,8 +329,8 @@ fieldset[disabled] .btn-xl.active {
   letter-spacing: 1px;
   color: white;
 }
-.navbar-custom .nav li a:hover,
-.navbar-custom .nav li a:focus {
+.navbar-custom .nav li a:focus,
+.navbar-custom .nav li a:hover {
   color: #fed136;
   outline: none;
 }
@@ -261,8 +339,8 @@ fieldset[disabled] .btn-xl.active {
   color: white;
   background-color: #fed136;
 }
-.navbar-custom .navbar-nav > .active > a:hover,
-.navbar-custom .navbar-nav > .active > a:focus {
+.navbar-custom .navbar-nav > .active > a:focus,
+.navbar-custom .navbar-nav > .active > a:hover {
   color: white;
   background-color: #fec503;
 }
@@ -295,7 +373,6 @@ fieldset[disabled] .btn-xl.active {
   }
 }
 header {
-  background-image: url('../img/header-bg.png');
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -456,8 +533,8 @@ section h3.section-subheading {
   position: relative;
   min-height: 50px;
 }
-.timeline > li:before,
-.timeline > li:after {
+.timeline > li:after,
+.timeline > li:before {
   content: " ";
   display: table;
 }
@@ -528,8 +605,8 @@ section h3.section-subheading {
 .timeline .timeline-heading h4.subheading {
   text-transform: none;
 }
-.timeline .timeline-body > p,
-.timeline .timeline-body > ul {
+.timeline .timeline-body > ul,
+.timeline .timeline-body > p {
   margin-bottom: 0;
 }
 @media (min-width: 768px) {
@@ -622,61 +699,6 @@ section h3.section-subheading {
 aside.clients img {
   margin: 50px auto;
 }
-section#contact {
-  background-color: #222222;
-  background-image: url('../img/map-image.png');
-  background-position: center;
-  background-repeat: no-repeat;
-}
-section#contact .section-heading {
-  color: white;
-}
-section#contact .form-group {
-  margin-bottom: 25px;
-}
-section#contact .form-group input,
-section#contact .form-group textarea {
-  padding: 20px;
-}
-section#contact .form-group input.form-control {
-  height: auto;
-}
-section#contact .form-group textarea.form-control {
-  height: 236px;
-}
-section#contact .form-control:focus {
-  border-color: #fed136;
-  box-shadow: none;
-}
-section#contact ::-webkit-input-placeholder {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #eeeeee;
-}
-section#contact :-moz-placeholder {
-  /* Firefox 18- */
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #eeeeee;
-}
-section#contact ::-moz-placeholder {
-  /* Firefox 19+ */
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #eeeeee;
-}
-section#contact :-ms-input-placeholder {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #eeeeee;
-}
-section#contact .text-danger {
-  color: #e74c3c;
-}
 footer {
   padding: 25px 0;
   text-align: center;
@@ -711,15 +733,15 @@ ul.social-buttons li a {
   -moz-transition: all 0.3s;
   transition: all 0.3s;
 }
-ul.social-buttons li a:hover,
+ul.social-buttons li a:active,
 ul.social-buttons li a:focus,
-ul.social-buttons li a:active {
+ul.social-buttons li a:hover {
   background-color: #fed136;
 }
-.btn:focus,
-.btn:active,
 .btn.active,
-.btn:active:focus {
+.btn:active,
+.btn:active:focus,
+.btn:focus {
   outline: none;
 }
 .portfolio-modal .modal-dialog {
