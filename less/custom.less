@@ -2,48 +2,67 @@
 //   position: absolute;
 // }
 
-header{
+header {
   padding-bottom: 123px;
 }
 
-.logo-text{
+.navbar-brand {
+  img {
+    width: 40%;
+    position: absolute;
+    max-width: 350px;
+    top: 9px;
+    left: 18%;
+  }
+}
+
+.logo-text {
   color: white;
   font-size: 0.5em;
 }
 
-.affix img{
+.affix img {
   display: none;
 }
 
 #services {
-  padding: 50px;
+  padding: 0;
+
+  #particles {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .container {
+    padding: 50px;
+  }
 }
 
-
-.intro-text{
+.intro-text {
   margin-left: 17%;
 
   .my-intro {
-    font-size:4em;
-    color:#ffffff;
-    letter-spacing:2.45px;
-    line-height:72.07px;
-    text-align:left;
+    font-size: 4em;
+    color: #ffffff;
+    letter-spacing: 2.45px;
+    line-height: 72.07px;
+    text-align: left;
   }
 
   .my-intro2 {
     font-family: PingFangSC-Thin;
     margin-top: 30px;
-    font-size:1.5em;
-    color:#ffffff;
-    letter-spacing:0.91px;
-    text-align:left;
+    font-size: 1.5em;
+    color: #ffffff;
+    letter-spacing: 0.91px;
+    text-align: left;
   }
-
 }
 
 #intro {
-  background-image:radial-gradient(29% 62%, #189dd3 30%, #53a0fe 86%);
+  background-image: radial-gradient(29% 62%, #189dd3 30%, #53a0fe 86%);
+  z-index: 2;
 
   b {
     font-size: 1.4em;
@@ -52,16 +71,18 @@ header{
   img {
     width: 80%;
   }
-  .introText{
+
+  .introText {
     font-family: PingFangSC-Thin;
-    font-size:1.3em;
-    color:#ffffff;
-    letter-spacing:1.35px;
-    line-height:30px;
-    text-align:justify;
+    font-size: 1.3em;
+    color: #ffffff;
+    letter-spacing: 1.35px;
+    line-height: 30px;
+    text-align: justify;
     width: 80%;
     margin: -50px auto 0;
   }
+
   .introLine {
     border: 0.5px solid rgba(255, 255, 255, 0.25);
     width: 80%;

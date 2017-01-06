@@ -6,6 +6,13 @@
 header {
   padding-bottom: 123px;
 }
+.navbar-brand img {
+  width: 40%;
+  position: absolute;
+  max-width: 350px;
+  top: 9px;
+  left: 18%;
+}
 .logo-text {
   color: white;
   font-size: 0.5em;
@@ -14,6 +21,14 @@ header {
   display: none;
 }
 #services {
+  padding: 0;
+}
+#services #particles {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+#services .container {
   padding: 50px;
 }
 .intro-text {
@@ -36,6 +51,7 @@ header {
 }
 #intro {
   background-image: radial-gradient(29% 62%, #189dd3 30%, #53a0fe 86%);
+  z-index: 2;
 }
 #intro b {
   font-size: 1.4em;
