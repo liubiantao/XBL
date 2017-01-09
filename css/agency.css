@@ -141,7 +141,32 @@ header {
   width: 341px;
   height: 75px;
   background: transparent;
+  font-size: 2em;
   margin: 50px auto;
+}
+#business .introText {
+  width: 80%;
+  font-family: PingFangSC-Thin;
+  font-size: 1.3em;
+  letter-spacing: 1.35px;
+  margin: 0 auto;
+}
+#business a {
+  font-family: PingFangSC-Regular;
+  font-size: 20px;
+  color: #4990e2;
+  letter-spacing: 0.75px;
+  float: right;
+  margin: 0 61px 0 -102px;
+  z-index: 3;
+}
+#business .img {
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+}
+#business .img img {
+  width: 80%;
 }
 #contact {
   text-align: center;
