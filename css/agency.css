@@ -228,6 +228,9 @@ header {
 .sub .bg-blue .introText {
   color: white;
 }
+.inline {
+  display: inline;
+}
 body {
   overflow-x: hidden;
   font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
